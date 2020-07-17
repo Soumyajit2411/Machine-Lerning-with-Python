@@ -37,3 +37,11 @@ b. Bivariate analysis:
        c. Predict on the test set. 
 
        d. Find out the accuracy.
+       
+# Results and Conclusions
+
+This is still a project in progress. No conclusions yet.
+       
+# Licensing, Authors, Acknowledgements, etc.
+    
+    Author : Soumyajit Roy
