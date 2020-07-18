@@ -25,13 +25,18 @@ Source-https://covid.ourworldindata.org/data/owid-covid-data.csv
       b. Draw line plots of each numerical column versus one another 
 
 5. Handle Missing values: 
+
       a. If there are null values in numerical column, replace the null values by the mean of that column 
+      
       b. If there are null values in categorical column, replace the null values by the mode of that column 
+      
       c. If more than 50%the values in a column are null, then drop that entire column 
 
 6. Convert date column to ordinal 
      a. Code: import datetime as dt 
+     
               df["date"]=pd.to_datetime(df["date"]) 
+              
               df["date"]=df["date"].map(dt.datetime.toordinal)
               
 7. Drop all categorical columns 
@@ -43,6 +48,7 @@ Source-https://covid.ourworldindata.org/data/owid-covid-data.csv
 10. Perform train-test split 
 
 11. Modelling: 
+
        a. Linear Regression 
        
        b. Random Forest Regressor 
