@@ -33,6 +33,7 @@ Source-https://covid.ourworldindata.org/data/owid-covid-data.csv
       c. If more than 50%the values in a column are null, then drop that entire column 
 
 6. Convert date column to ordinal 
+
      a. Code: import datetime as dt 
      
               df["date"]=pd.to_datetime(df["date"]) 
